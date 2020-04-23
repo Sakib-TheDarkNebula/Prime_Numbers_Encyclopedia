@@ -1,0 +1,507 @@
+/* Main Structure */
+/* ///////////// */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+title {
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(Images/Bottom-back.jpg);
+    background-size: cover;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: rgb(1, 1, 1);
+}
+
+.svg-icon circle {
+    stroke: rgb(1, 1, 1);
+    stroke-width: 1;
+}
+
+
+label {
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    font-family: "Comic Sans MS", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-top: 40px;
+    padding: 8px;
+    text-align: center;
+}
+
+input:hover,
+input:focus {
+    border-bottom: 1.4px solid rgb(110, 25, 136);
+    transform: translateX(-10%);
+    transition: ease-in-out .2s;
+}
+
+.main button {
+    font-family: 'Comic Sans MS';
+    margin-top: 25px;
+    font-size: 20px;
+    padding: 3px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.main button:hover {
+    padding: 3px 27px;
+    transition: ease-in .2s;
+}
+
+.center {    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+/* ///////////////// */
+/* MAIN CONTENT BOX */
+.header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 37.5px;
+    margin: 20px auto auto 15px;
+}
+
+.temp-header {
+    display: none;
+}
+
+
+.btn-cont {
+    display: flex;
+    margin: 20px auto;
+    margin-left: 20px;
+    width: 81%;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.left-cont .icons {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    background: rgba(211, 211, 211, 0.384);
+}
+
+.left-cont button .svg-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-text {
+    font-size: 22px;
+    background: rgba(211, 211, 211, 0.384);
+    border: .5px solid rgba(211, 211, 211, 0.445);
+    height: 80px;
+    width: 0px;
+    overflow: hidden;
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-cont button:hover + .btn-text,
+.btn-text:hover {
+    width: 500px;
+    transition: width ease-in-out .5s;
+    border: .5px solid rgba(211, 211, 211, 0.445);
+}
+
+
+.left-cont button:hover {
+    border: .5px solid rgba(211, 211, 211, 0.445);
+}
+
+
+.contents {
+    width: 1000px;
+    background: #FFF;
+    box-shadow: 2px 15px 25px rgba(211, 211, 211, 0.795);
+    height: 700px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-cont {
+    width: 50%;
+    background-image: url(Images/notes-on-table-3782032.jpg);
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+
+
+/* /////////////////////////////// */
+/* ALL CONTENTS */
+.main-conts {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    float: right;
+    overflow: hidden;
+}
+
+.sub-conts {
+    width: 100%;
+    height: 100%;
+}
+
+.default {
+    background: rgba(211, 211, 211, 0.507);
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.default-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: rgba(206, 206, 206, 0.13);
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* /////////////// */
+/* WHAT IS A PRIME NUMBER? */
+
+.info_main h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.info_main p {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+.prime-num-examples {
+    list-style-position: inside;
+    text-align: center;
+    list-style: circle;
+    font-size: 20px;
+}
+
+.info_main a {
+    text-decoration: none;
+}
+
+
+
+/* //////////////////// */
+/* CHECKING A PRIME NUMBER */
+.check-prime_main h2 {
+    margin: auto auto 80px auto;
+    font-size: 22.5px;
+    color: rgb(27, 27, 27);
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+
+.check-prime-enter {
+    font-family: 'Comic Sans MS';
+    margin-top: 25px;
+    font-size: 20px;
+    padding: 3px 20px;
+    background: #EFC050;
+    border-radius: 10px;
+}
+
+.check-prime_main h3 {
+    margin-top: 50px;
+    font-family: 'Copperplate Gothic', 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-left: 0;
+}
+
+.check-prime-output {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.check-prime-enter:hover {
+    padding: 3px 27px;
+    transition: ease-in .2s;
+}
+
+.divisibility-check {
+    display: none;
+    background: rgba(110, 25, 136, 0.815); 
+}
+
+
+
+
+
+
+/* /////////////////// */
+/* PRIME NUMBERS IN A CERTAIN RANGE */
+.range_main h2 {
+    margin-bottom: 15px; 
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 22.5px;
+}
+
+.range_main h3 {
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.range_main label {
+    margin-bottom: 4px;
+}
+
+
+.range_main input {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.range_main button {
+    font-family: 'Comic Sans MS';
+    /* margin-top: 10px; */
+    font-size: 20px;
+    padding: 3px 20px;
+    background: rgba(64, 224, 208, 0.961);
+    border: none;
+    border-radius: 10px;
+}
+
+.range_main button:hover {
+    padding: 3px 27.5px;
+    transition: ease-in .2s;
+}
+
+.range_main-output-label {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.range_main-output,
+.divisibility-output {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin: 15px;
+    font-size: 22.5px;
+    padding: 15px;
+    overflow: auto;
+    height: 100px;
+    border: 0.5px solid rgba(27, 27, 27, 0.329);
+    border-radius: 4px;
+    overflow-wrap: break-word;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.prime-num-list-length {
+    font-size: 20px;
+}
+
+
+
+
+
+/* /////////////////////////// */
+/* CHECKING OUT DIVISIBILITY */
+.divisibility_main h2 {
+    margin-bottom: 40px;  
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 22.5px;
+}
+
+.divisibility_main input {
+    margin-top: 20px;
+}
+
+.divisibility_main button {
+    background: #4ca3dd;
+    border: none;
+}
+
+.divisibility_main h4 {
+    margin-top: 40px;
+    font-size: 22.5px;
+}
+
+.divisibility-output {
+    height: 150px;
+}
+
+
+
+
+
+/* ///////////////// */
+/* SHARE */
+.share_main h2 {
+    margin-bottom: 30px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.share_main-desc {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+.share_main .link-label, .share_main .other-projects-label, .share_main .contact-label {
+    font-size: 20px;
+    margin: 10px auto 5px auto;
+}
+
+.contact-label {
+    padding: 0 10px 0 10px;
+}
+
+.share_main h4 {
+    margin-top: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* /////////////////////////// */
+/* MAIN CONTENTS CLICK EFFECT */
+.main {
+    display: none;
+    transition: transform ease-in-out .2s;
+} 
+
+
+
+/* ////////////////////////// */
+/*  MEDIA QUERIES  */
+
+@media only screen and (min-width: 1900px) {
+    .contents {
+        width: 1440px !important;
+        height: 1000px !important;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .contents {
+        width: 100% !important; 
+    }
+
+    .left-cont {
+        width: 20% !important;
+    }
+
+    .main-conts {
+        width: 79.5% !important;
+    }
+
+    .main-header {
+        display: none !important;
+    }
+
+    .temp-header {
+        display: inline !important;
+    }
+
+    .btn-cont {
+        margin-left: 0 !important;
+    }
+
+    .left-cont button:hover + .btn-text {
+        display: none !important;
+        border: none;
+    }
+
+    .left-cont button:hover {
+        transform: translateX(7px) !important;
+        transition: ease .2s !important;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .info_main p {
+        font-size: 18px !important;
+        padding: 4px !important;
+        margin-top: 10px !important;
+    }
+
+    .info_main h2 {
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .share_main h2 {
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .share_main p {
+        font-size: 18px !important;
+        padding: 4px !important;
+        margin-top: 10px !important;
+    }
+}
