@@ -11,7 +11,7 @@ title {
 }
 
 body {
-    background-image: url(Images/Bottom-back.jpg);
+    background-image: url(Bottom-back.jpg);
     background-size: cover;
     overflow: auto;
 }
@@ -157,7 +157,7 @@ input:focus {
 
 .left-cont {
     width: 50%;
-    background-image: url(Images/notes-on-table-3782032.jpg);
+    background-image: url(notes-on-table-3782032.jpg);
     background-size: cover;
     height: 100%;
     position: absolute;
@@ -452,7 +452,7 @@ input:focus {
 
 @media only screen and (max-width: 999px) {
     body {
-        background: url(Back\ -\ 1000px.jpg) !important;
+        background: url(notes-on-table-3782032.jpg) !important;
     }
 
     .contents {
